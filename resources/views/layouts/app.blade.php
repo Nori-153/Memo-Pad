@@ -93,8 +93,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 p-0"
-                    >右カラム
+                <div class="col-md-6 p-0">
                     @yield('content')
                 </div>
             </div>
