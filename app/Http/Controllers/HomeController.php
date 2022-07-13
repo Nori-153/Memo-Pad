@@ -29,8 +29,10 @@ class HomeController extends Controller
 
     public function store(Request $request)
     {
-        $request = $request->all();
+        $posts = $request->all();
 
-        Memo::insert(['content', $posts['content'], 'user_id' => \Auth::id()]);
+        Memo::insert(['content' => $posts['content'], 'user_id' => \Auth::id()]);
+
+        return redirect( route('home') );
     }
 }
